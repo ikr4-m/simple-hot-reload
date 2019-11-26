@@ -77,7 +77,7 @@ function compileJS () {
     })
 
     // Buat file baru yang isinya JS yang telah diuglify + tanda tangan pembuatannya
-    fs.writeFileSync('public/dist/main.min.js', signature + uglifyJS.minify(jsCode.join(';')))
+    fs.writeFileSync('public/dist/main.min.js', signature + uglifyJS.minify(jsCode.join(';')).code)
 
     // Stream JSnya
     console.log(`[${chalk.green('SimpleReload')}] JS berhasil dicompile!`)
