@@ -1,7 +1,8 @@
 {
   "name": "simple-hot-reload",
   "version": "1.0.0",
-  "description": "",
+  "description": "Implementation Hot Reload with BrowserSync and Gulp. But without Gulp Plugin.",
+  "url": "https://github.com/skymunn/simple-hot-reload",
   "main": "index.js",
   "scripts": {
     "start": "gulp",
