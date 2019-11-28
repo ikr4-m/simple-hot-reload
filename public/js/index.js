@@ -1,3 +1,1 @@
-/* global alert */
-
-alert('hebat')
+console.log('Mantap')

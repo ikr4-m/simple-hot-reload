@@ -1,4 +1,1 @@
-/* global alert */
-
-const a = 1
-alert(a + 1)
+console.log('kamu hebat')
