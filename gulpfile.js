@@ -60,9 +60,10 @@ function compileSASS () {
 
       // Stream CSSnya
       console.log(`[${chalk.green('SimpleReload')}] SCSS berhasil dicompile!`)
+      browserSync.notify('SCSS compiled.')
       return g.pipe(browserSync.stream())
     } catch (error) {
-      browserSync.notify(error.message)
+      browserSync.notify(error.message, 5000)
       beep(5, 1000)
       return g.pipe(notify(error.message))
     }
@@ -92,9 +93,10 @@ function compileJS () {
 
       // Stream JSnya
       console.log(`[${chalk.green('SimpleReload')}] JS berhasil dicompile!`)
+      browserSync.notify('JS compiled.')
       return g.pipe(browserSync.stream())
     } catch (error) {
-      browserSync.notify(error.message)
+      browserSync.notify(error.message, 5000)
       beep(5, 1000)
       return g.pipe(notify(error.message))
     }
